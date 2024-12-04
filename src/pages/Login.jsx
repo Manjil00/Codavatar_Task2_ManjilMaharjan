@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-    const [fullname,setFullName]=useState("");
-    const [username,setUserName]=useState("");
     const [email,setEmail]=useState("");
-    const [phone,setPhone]=useState("");
+    const [password,setPassword]=useState("");
+    const navigate=useNavigate();
 
     const handlelogin= ()=>{
         toast.success("You have been logged In !!!",{
             position: "top-center",
         });
-        setFullName("");
-        setUserName("");
         setEmail("");
-        setPhone("");
+        setPassword("");
+
+        setTimeout(() => {
+            navigate('/Form');
+        }, 2000);
     }
 
 return (
@@ -34,10 +36,10 @@ return (
                 </div>
 
                 <div className="Input4 w-full h-[50px] ">
-                <h1 className='font-sans text-md ml-4'>Phone No.</h1>
-                <input onChange={(e)=>setPhone(e.target.value)}
-                value={phone}
-                type="text" placeholder='eg: 9812345678' className='w-full h-[50px] rounded-xl p-5 border-2 border-slate-500'/>
+                <h1 className='font-sans text-md ml-4'>Password</h1>
+                <input onChange={(e)=>setPassword(e.target.value)}
+                value={password}
+                type="password" placeholder='eg: Qwerty@111222' className='w-full h-[50px] rounded-xl p-5 border-2 border-slate-500'/>
                 </div>
             </div>
             <div className="btns w-full h-[100px]  flex justify-center items-end ">

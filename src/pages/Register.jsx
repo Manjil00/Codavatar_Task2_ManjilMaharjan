@@ -1,8 +1,7 @@
-import React,{useState} from 'react'
-import { Link, Navigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [fullname,setFullName]=useState("");
@@ -14,7 +13,7 @@ const Register = () => {
 
 
     const handleregister= ()=>{
-        toast.success("You have been Registered Successfully !!!",{
+        toast("Verify you Email to Register Successfully !!!",{
             position: "top-center",
         });
         setFullName("");
