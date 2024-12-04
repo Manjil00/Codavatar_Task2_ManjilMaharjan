@@ -18,7 +18,7 @@ const Login = () => {
         setPassword("");
 
         setTimeout(() => {
-            navigate('/Form');
+            navigate('/VerifyEmail');
         }, 2000);
     }
 
