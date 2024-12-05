@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import { useNavigate } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Card from '../components/Card';
 
 const VerifyEmail = () => {
 
@@ -23,12 +25,7 @@ const VerifyEmail = () => {
             toast.success("You have been sucfully verified Please Login Now !!",{
                 position: "top-center",
             });
-            setFirst("");
-            setSecond("");
-            setThird("");
-            setFourth("");
-            setFifth("");
-            setSixth("");
+            setFirst("");setSecond("");setThird("");setFourth("");setFifth("");setSixth("");
 
             setTimeout(() => {
                 navigate('/Form');
@@ -38,8 +35,11 @@ const VerifyEmail = () => {
 return (
     <div  className='mainContainer bg-white h-[100vh] w-full flex'>
 
-        <div className="LeftSec w-[50%] h-full bg-red-700">
-
+        <div className="LeftSec w-[50%] h-full bg-gradient-to-br from-blue-500 to-yellow-700 relative">
+            <img src='/images/Mask group.png' className='h-full w-full object-cover overflow-hidden' alt='bgleft'/>
+            <h2 className='flex justify-start items-center gap-5 ml-5 absolute left-5 top-8 text-white'><AiOutlineArrowLeft /> Back</h2>
+            <h1 className=' absolute left-[300px] top-[70px] font-sans text-3xl text-white font-bold'>Layout Cards</h1>
+            <Card/>
         </div>
 
         <div className="rightSec w-[50%] h-full flex flex-col justify-between items-center p-10">
