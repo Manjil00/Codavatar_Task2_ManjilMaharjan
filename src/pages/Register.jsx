@@ -23,7 +23,7 @@ const Register = () => {
         setPassword("");
 
         setTimeout(() => {
-            navigate('/');
+            navigate('/VerifyEmail');
         }, 2000);
     };
 

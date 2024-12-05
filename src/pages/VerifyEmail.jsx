@@ -32,12 +32,16 @@ const VerifyEmail = () => {
             }, 2000);
         }
     }
+    const handleBackRoute=()=>{
+        navigate('/');
+    }
 return (
     <div  className='mainContainer bg-white h-[100vh] w-full flex'>
 
         <div className="LeftSec w-[50%] h-full bg-gradient-to-br from-blue-500 to-yellow-700 relative">
             <img src='/images/Mask group.png' className='h-full w-full object-cover overflow-hidden' alt='bgleft'/>
-            <h2 className='flex justify-start items-center gap-5 ml-5 absolute left-5 top-8 text-white'><AiOutlineArrowLeft /> Back</h2>
+            <h2 onClick={()=>handleBackRoute()}
+            className='flex justify-start items-center gap-2 cursor-pointer ml-5 absolute left-5 top-8 text-white'><AiOutlineArrowLeft /> Back</h2>
             <h1 className=' absolute left-[300px] top-[70px] font-sans text-3xl text-white font-bold'>Layout Cards</h1>
             <Card/>
         </div>
@@ -78,7 +82,7 @@ return (
                 <ToastContainer/>
                 </div>
             </div>
-            <h1 className='text-center font-sans text-sm text-slate-500 '>By continuing, you're agreeing to Nobody's <span className='text-blue-600'>Terms of Service, Privacy Policy</span><br/>and <span className='text-blue-600'>Cookie policy</span></h1>
+            <h1 className='text-center font-sans text-sm text-slate-500 '>By continuing, you're agreeing to Nobody's <span className='text-blue-600 cursor-pointer'>Terms of Service, Privacy Policy</span><br/>and <span className='text-blue-600 cursor-pointer'>Cookie policy</span></h1>
         </div>
 
     </div>
