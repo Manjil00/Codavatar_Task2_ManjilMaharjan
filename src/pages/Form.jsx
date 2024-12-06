@@ -2,9 +2,17 @@ import React,{useState} from 'react'
 
 const Form = () => {
     const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption2, setSelectedOption2] = useState('');
+    const [selectedOption3, setSelectedOption3] = useState('');
 
-    const handleChange = (e) => {
+    const handleDdown1 = (e) => {
         setSelectedOption(e.target.value);
+    };
+    const handleDdown2 = (e) => {
+        setSelectedOption2(e.target.value);
+    };
+    const handleDdown3 = (e) => {
+        setSelectedOption3(e.target.value);
     };
 return (
     <div className='mainContainer bg-white h-auto w-full p-2'>
@@ -52,7 +60,7 @@ return (
                     <label className='text-slate-500'>One Random Dropdown?</label>
                     <select
         value={selectedOption}
-        onChange={handleChange}
+        onChange={handleDdown1}
         className="w-full mt-2 p-3 bg-white text-slate-500 border-2 border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
         <option value="" disabled>Select an option...</option>
         <option value="option1">This</option>
@@ -63,8 +71,8 @@ return (
                 </div><div className="legalName">
                     <label className='text-slate-500'>Which dropdown would you like to select?</label>
                     <select
-        value={selectedOption}
-        onChange={handleChange}
+        value={selectedOption2}
+        onChange={handleDdown2}
         className="w-full mt-2 p-3 bg-white text-slate-500 border-2 border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
         <option value="" disabled>Select an option...</option>
         <option value="option1">This</option>
@@ -76,8 +84,8 @@ return (
                 <div className="legalName">
                     <label className='text-slate-500'>Another Random Dropdown Appears</label>
                     <select
-        value={selectedOption}
-        onChange={handleChange}
+        value={selectedOption3}
+        onChange={handleDdown3}
         className="w-full mt-2 p-3 bg-white text-slate-500 border-2 border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
         <option value="" disabled>Select an option...</option>
         <option value="option1">This is</option>
