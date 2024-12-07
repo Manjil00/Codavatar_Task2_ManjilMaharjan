@@ -1,5 +1,6 @@
 import React from 'react'
 import Forminputs from '../components/Forminputs';
+import DndUpload from '../components/DndUpload';
 
 const Form = () => {
 
@@ -29,7 +30,21 @@ return (
                 <h1 className='text-black text-3xl'>Tell us more about your business</h1>
                 <p className='text-slate-500 text-sm mt-2'>Your info is like the Wi-Fi password--totally crucial for keeping things running, impressing the money folks, and making sure you <br/>get top notch service without any buffering!</p>
                     <Forminputs/>
-        
+
+                <div className="DNDform mt-8">
+                    <h1 className='font-sans text-xl font-semibold'>Certification of Incorporation<span className='text-red-600'>*</span></h1>
+                    <p className="upload text-slate-500 mt-2">Upload the incorporated certificate</p>
+                    <DndUpload/>
+                    <h1 className='font-sans text-xl font-semibold mt-5'>Company Logo<span className='text-red-600'>*</span></h1>
+                    <p className="upload text-slate-500 mt-2">Upload the company logo</p>
+                    <DndUpload/>
+                </div>
+
+            <div className="pagination flex justify-between items-center mt-10 p-2">
+                <button className='p-3 bg-white hover:bg-btnColor hover:text-white hover:border-none rounded-xl border-2 border-black text-black w-[100px] h-[50px]'>Previous</button>
+                <button className='p-3 bg-btnColor rounded-xl text-white w-[100px] h-[50px]'>Next</button>
+            </div>
+
             </div>
         </div>
         

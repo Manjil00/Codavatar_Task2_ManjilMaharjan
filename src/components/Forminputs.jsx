@@ -21,23 +21,23 @@ return (
     <div className='w-full h-auto'>
         <div className="inputfields grid grid-cols-2 gap-8 mt-10">
                 <div className="legalName">
-                    <label className='text-slate-500'>Legal Name <span className='text-btnColor'>*</span></label>
+                    <label className='text-slate-500'>Legal Name <span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Legal Name' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div>
                 <div className="business as">
-                    <label className='text-slate-500'>Doing business as</label>
+                    <label className='text-slate-500'>Doing business as<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Doing business as' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div><div className="legalName">
-                    <label className='text-slate-500'>Company Registration Number</label>
+                    <label className='text-slate-500'>Company Registration Number <span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Company Registration Number' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div><div className="legalName">
-                    <label className='text-slate-500'>Website URL</label>
+                    <label className='text-slate-500'>Website URL<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Website URL' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div><div className="legalName">
-                    <label className='text-slate-500'>Industry Name</label>
+                    <label className='text-slate-500'>Industry Name<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Industry Name' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div><div className="legalName">
-                    <label className='text-slate-500'>One Random Dropdown?</label>
+                    <label className='text-slate-500'>One Random Dropdown?<span className='text-btnColor'> *</span></label>
                     <select
         value={selectedOption}
         onChange={handleDdown1}
@@ -49,7 +49,7 @@ return (
         <option value="option4">Dropdown</option>
     </select>
                 </div><div className="legalName">
-                    <label className='text-slate-500'>Which dropdown would you like to select?</label>
+                    <label className='text-slate-500'>Which dropdown would you like to select?<span className='text-btnColor'> *</span></label>
                     <select
         value={selectedOption2}
         onChange={handleDdown2}
@@ -62,7 +62,7 @@ return (
     </select>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Another Random Dropdown Appears</label>
+                    <label className='text-slate-500'>Another Random Dropdown Appears<span className='text-btnColor'> *</span></label>
                     <select
         value={selectedOption3}
         onChange={handleDdown3}
@@ -75,23 +75,23 @@ return (
     </select>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Random count per month</label>
+                    <label className='text-slate-500'>Random count per month<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Random count per month' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Expected total visits in this page</label>
+                    <label className='text-slate-500'>Expected total visits in this page<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Expected total visits in this page' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Purpose of using fake form</label>
+                    <label className='text-slate-500'>Purpose of using fake form<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Purpose of using fake form' className='border border-gray-400 p-2 h-[100px] w-full mt-3 rounded-xl'/>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Ek description to banta hai</label>
+                    <label className='text-slate-500'>Ek description to banta hai<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Ek description to banta hai' className='border border-gray-400 p-2 h-[100px] w-full mt-3 rounded-xl'/>
                 </div>
                 <div className="legalName">
-                    <label className='text-slate-500'>Contact Email</label>
+                    <label className='text-slate-500'>Contact Email<span className='text-btnColor'> *</span></label>
                     <input type="text" placeholder='Contact Email' className='border border-gray-400 p-2 w-full mt-3 rounded-xl'/>
                 </div>
                 </div>
