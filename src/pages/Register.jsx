@@ -72,7 +72,7 @@ return (
             <div className="btns w-full h-[100px]  flex justify-center items-end ">
             <button
             onClick={()=>handleregister()}
-            className='p-2 bg-btnColor rounded-xl h-auto w-[100px] mt-10 text-white'>Login</button>
+            className='p-2 bg-btnColor rounded-xl h-auto w-[100px] mt-10 text-white'>Register</button>
             <ToastContainer/>
         </div>
         </div>
