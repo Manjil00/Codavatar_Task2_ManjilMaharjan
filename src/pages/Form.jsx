@@ -1,8 +1,24 @@
 import React from 'react'
 import Forminputs from '../components/Forminputs';
 import DndUpload from '../components/DndUpload';
+import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Form = () => {
+
+const handleprev=()=>{
+    toast("No Previous Form",{
+        position: "top-center",
+    });
+}
+
+const handlenext=()=>{
+    toast("No Next Form",{
+        position: "top-center",
+    });
+}
 
 return (
     <div className='mainContainer bg-white h-auto w-full p-2'>
@@ -41,8 +57,11 @@ return (
                 </div>
 
             <div className="pagination flex justify-between items-center mt-10 p-2">
-                <button className='p-3 bg-white hover:bg-btnColor hover:text-white hover:border-none rounded-xl border-2 border-black text-black w-[100px] h-[50px]'>Previous</button>
-                <button className='p-3 bg-btnColor rounded-xl text-white w-[100px] h-[50px]'>Next</button>
+                <ToastContainer/>
+                <button onClick={()=>handlenext()}
+                className='p-3 bg-white hover:bg-btnColor hover:text-white hover:border-none rounded-xl border-2 border-black text-black w-[100px] h-[50px]'>Previous</button>
+                <button onClick={()=>handleprev()}
+                className='p-3 bg-btnColor rounded-xl text-white w-[100px] h-[50px]'>Next</button>
             </div>
 
             </div>
