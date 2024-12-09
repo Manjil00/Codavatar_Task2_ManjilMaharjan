@@ -28,7 +28,7 @@ const VerifyEmail = () => {
             setFirst("");setSecond("");setThird("");setFourth("");setFifth("");setSixth("");
 
             setTimeout(() => {
-                navigate('/Login');
+                navigate('/');
             }, 2000);
         }
     }
